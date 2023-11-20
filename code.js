@@ -228,3 +228,66 @@
 //     console.log('The sum is: ' + sum); 
 // } 
 //   document.getElementById('calculate').addEventListener('click', calculateSum);
+
+// #501 
+// ;(function() { 
+//  let str1 = 'переменная модуля'; 
+//  let str2 = 'переменная модуля'; 
+//  let str3 = 'переменная модуля'; 
+  
+//  function func1() { 
+//   alert('функция модуля'); 
+//  } 
+//  function func2() { 
+//   alert('функция модуля'); 
+//  } 
+//  function func3() { 
+//   alert('функция модуля'); 
+//  } 
+// })(); 
+// let str1 = 'переменная модуля'; 
+// function func1() { 
+//   alert('функция модуля'); 
+// } 
+// function func2() { 
+//   alert('функция модуля'); 
+// } 
+// export { str1, func1, func2 }; 
+ 
+// #502  
+// let str1 = 'переменная модуля'; 
+// function func1() { 
+//   alert('функция модуля'); 
+// } 
+// function func2() { 
+//   alert('функция модуля'); 
+// } 
+// export { str1, func1, func2 }; 
+ 
+// import { str1, func1, func2 } from './module.js'; 
+// console.log(str1); 
+// func1(); 
+// func2(); 
+ 
+// #503.1 
+// function avg1(arr) {  
+//     return sum(arr, 1) / arr.length;  
+// }  
+//    function avg2(arr) {  
+//     return sum(arr, 2) / arr.length;  
+// }  
+//    function avg3(arr) {  
+//     return sum(arr, 3) / arr.length;  
+// } 
+//    export { avg1, avg2, avg3 }; 
+//    import { avg1, avg2, avg3 } from './module.js'; 
+//    console.log(avg1([1, 2, 3]));  
+//    console.log(avg2([1, 2, 3]));  
+//    console.log(avg3([1, 2, 3]));  
+//    function sum(arr, pow) { 
+//     let res = 0; 
+//     for (let elem of arr) { 
+//      res += elem ** pow; 
+//     } 
+//     return res; 
+// }
